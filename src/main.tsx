@@ -10,7 +10,8 @@ import {
 import {
   Schedule,
   Scoreboard,
-  Broadcast
+  Broadcast,
+  Team
 } from './routes';
 import { Page } from './components/common/page';
 
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/broadcast",
     element: <Page><Broadcast /></Page>,
+  },
+  {
+    path: "/teams/:id",
+    element: <Page><Team /></Page>,
   }
 ]);
 

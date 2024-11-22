@@ -1,5 +1,6 @@
 import { Bracket, IRoundProps } from 'react-brackets';
 import { CustomSeed } from './components/custom-seed';
+import { matches } from '../../lib/data';
 
 export function Scoreboard () {
     const rounds: IRoundProps[] = [
@@ -7,36 +8,14 @@ export function Scoreboard () {
             title: '',
             seeds: [
                 {
-                    id: 1,
-                    date: new Date().toLocaleDateString(),
-                    teams: [
-                        {
-                            name: 'LOUD',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/LOUD_logo.svg/1200px-LOUD_logo.svg.png',
-                            score: '0',
-                        },
-                        {
-                            name: 'Furia',
-                            logo: 'https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png',
-                            score: '2',
-                        }
-                    ],
+                    id: matches[0].id,
+                    date: matches[0].date.toLocaleDateString(),
+                    teams: matches[0].teams.map((t) => ({...t.team, score: t.score})),
                 },
                 {
-                    id: 2,
-                    date: new Date().toLocaleDateString(),
-                    teams: [
-                        {
-                            name: 'Furia',
-                            logo: 'https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png',
-                            score: '1',
-                        },
-                        {
-                            name: 'LOUD',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/LOUD_logo.svg/1200px-LOUD_logo.svg.png',
-                            score: '2',
-                        }
-                    ],
+                    id: matches[1].id,
+                    date: matches[1].date.toLocaleDateString(),
+                    teams: matches[1].teams.map((t) => ({...t.team, score: t.score})),
                 },
             ],
         },
@@ -44,20 +23,9 @@ export function Scoreboard () {
             title: '',
             seeds: [
                 {
-                    id: 3,
-                    date: new Date().toLocaleDateString(),
-                    teams: [
-                        {
-                            name: 'LOUD',
-                            logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/LOUD_logo.svg/1200px-LOUD_logo.svg.png',
-                            score: '-',
-                        },
-                        {
-                            name: 'Furia',
-                            logo: 'https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png',
-                            score: '-',
-                        }
-                    ],
+                    id: matches[2].id,
+                    date: matches[2].date.toLocaleDateString(),
+                    teams: matches[2].teams.map((t) => ({...t.team, score: t.score})),
                 },
             ]
         }
