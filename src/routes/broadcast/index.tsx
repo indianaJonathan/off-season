@@ -2,7 +2,7 @@ export function Broadcast () {
     return (
         <div className="flex flex-col divide-y-2 divide-zinc-500">
             <iframe
-                src="https://player.twitch.tv/?channel=tixinhadois&parent=keen-sunflower-44f7bd.netlify.app"
+                src="https://player.twitch.tv/?channel=tixinhadois&parent=offseason-brazil.netlify.app"
                 height="500px"
                 width="100%"
                 allowFullScreen={true}
