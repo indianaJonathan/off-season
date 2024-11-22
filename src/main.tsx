@@ -14,27 +14,33 @@ import {
   Team
 } from './routes';
 import { Page } from './components/common/page';
+import { NotFound } from './not-found';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Page><App /></Page>,
+    errorElement: <NotFound />,
   },
   {
     path: "/schedule",
     element: <Page><Schedule /></Page>,
+    errorElement: <NotFound />,
   },
   {
     path: "/scoreboard",
     element: <Page><Scoreboard /></Page>,
+    errorElement: <NotFound />,
   },
   {
     path: "/broadcast",
     element: <Page><Broadcast /></Page>,
+    errorElement: <NotFound />,
   },
   {
     path: "/teams/:id",
     element: <Page><Team /></Page>,
+    errorElement: <NotFound />,
   }
 ]);
 
