@@ -12,7 +12,7 @@ export function Team ({ team }: { team: TeamType }) {
                 <img src={team.logo} alt={team.name} className="w-8 h-8" />
                 <span>{team.name}</span>
             </div>
-            <div className="bg-zinc-700 px-3 py-2">
+            <div className="px-3 py-2">
                 <span className="font-semibold text-lg">
                     {team.score}
                 </span>

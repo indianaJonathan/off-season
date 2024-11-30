@@ -1,12 +1,8 @@
-type Team = {
-    id: string;
-    name: string;
-    logo: string;
-}
+import { MatchTeam } from "../../../lib/types";
 
 interface MatchProps {
-    team1: Team;
-    team2: Team;
+    team1: MatchTeam;
+    team2: MatchTeam;
     time: string;
 }
 
@@ -15,13 +11,15 @@ export function Match ({ team1, team2, time }: MatchProps) {
         <div className="flex items-center gap-2 border border-zinc-500 p-4 rounded">
             <div className="flex-1 flex items-center justify-center gap-3">
                 <div className="flex items-center gap-2">
-                    <img src={team1.logo} alt={team1.name} className="w-8 h-8" />
-                    <span className="font-semibold text-lg">{team1.name}</span>
+                    <img src={team1.team.logo} alt={team1.team.name} className="w-8 h-8 object-scale-down" />
+                    <span className="font-semibold text-lg">{team1.team.name}</span>
+                    <span>{team1.score}</span>
                 </div>
                 <span className="font-light text-sm">X</span>
                 <div className="flex items-center gap-2">
-                    <span className="font-semibold text-lg">{team2.name}</span>
-                    <img src={team2.logo} alt={team2.name} className="w-8 h-8" />
+                    <span>{team2.score}</span>
+                    <span className="font-semibold text-lg">{team2.team.name}</span>
+                    <img src={team2.team.logo} alt={team2.team.name} className="w-8 h-8 object-scale-down" />
                 </div>
             </div>
             <span>{time}h</span>

@@ -6,6 +6,7 @@ const teams: Team[] = [
         name: "LOUD",
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/LOUD_logo.svg/1200px-LOUD_logo.svg.png",
         symbol: "LLL",
+        vlr: "https://www.vlr.gg/team/6961/loud",
         players: [
             {
                 id: "1",
@@ -44,6 +45,7 @@ const teams: Team[] = [
         name: "Furia",
         logo: "https://upload.wikimedia.org/wikipedia/pt/f/f9/Furia_Esports_logo.png",
         symbol: "FUR",
+        vlr: "https://www.vlr.gg/team/2406/furia",
         players: [
             {
                 id: "1",
@@ -81,6 +83,7 @@ const teams: Team[] = [
         name: "MIBR",
         logo: "https://tr.egamersworld.com/_next/image?url=https%3A%2F%2Fegamersworld.com%2Fuploads%2Fvalorant%2Fteams%2Fmibr-logo-white.png&w=384&q=75",
         symbol: "MBR",
+        vlr: "https://www.vlr.gg/team/7386/mibr",
         players: [
             {
                 id: "1",
@@ -119,6 +122,7 @@ const teams: Team[] = [
         name: "KRU",
         logo: "https://i.namu.wiki/i/GHrz6y7qiDsMos3qYnboyiUXwHa80QujzR3--A63eR4ode-2kXnyH4suCmrkipZ-Nr9Cf-8AeAvfHiEEfq_1RQ.svg",
         symbol: "KRU",
+        vlr: "https://www.vlr.gg/team/2355/kr-esports",
         players: [
             {
                 id: "1",
@@ -161,8 +165,9 @@ const teams: Team[] = [
     {
         id: "5",
         name: "2Game",
-        logo: "https://i.namu.wiki/i/7P85SW-k80A8234tM3ZNPoHa3agRGRzbo0ZamuXLv3MEEPWJw60rLW7yQWzyCjjDyjgFUqymAfpZyDYWRSGcmQ.webp",
+        logo: "https://owcdn.net/img/671ecdabd85d2.png",
         symbol: "2G",
+        vlr: "https://www.vlr.gg/team/15072/2game-esports",
         players: [
             {
                 id: "1",
@@ -197,6 +202,30 @@ const teams: Team[] = [
                 role: "duelist",
             }
         ]
+    },
+    {
+        id: "6",
+        name: 'ShindeN',
+        logo: "https://owcdn.net/img/6748dec4df18c.png",
+        symbol: "SDN",
+        vlr: "https://www.vlr.gg/team/16971/shinden/",
+        players: [],
+    },
+    {
+        id: "7",
+        name: 'Campeão do VCB',
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s",
+        symbol: "TBD",
+        vlr: "https://www.vlr.gg/event/2200/gamers-club-challengers-league-2024-brazil-split-3",
+        players: [],
+    },
+    {
+        id: "8",
+        name: 'Vice campeão do VCB',
+        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s",
+        symbol: "TBD",
+        vlr: "https://www.vlr.gg/event/2200/gamers-club-challengers-league-2024-brazil-split-3",
+        players: [],
     }
 ]
 

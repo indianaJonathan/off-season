@@ -1,6 +1,7 @@
 import { useParams } from "react-router";
 import { teams } from "../../lib/data";
 import { NotFound } from "../../not-found";
+import { Link } from "react-router-dom";
 
 export function Team () {
     const params = useParams();
@@ -13,7 +14,19 @@ export function Team () {
 
     return (
         <div className="p-8 flex flex-col gap-2">
-            <h1 className="font-semibold text-3xl">{team.name}</h1>
+            <div className="flex items-center gap-2 p-1">
+                <h1 className="font-semibold text-3xl">{team.name}</h1>
+                {team.vlr && (
+                    <Link
+                        to={team.vlr}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-lg bg-zinc-500 p-1 select-none hover:bg-zinc-600 transition-colors"
+                    >
+                        <img src="https://www.vlr.gg/img/vlr/logo_header.png" alt="VLR logo" className="size-4 object-scale-down" />
+                        <span className="font-light text-sm">VLR</span>
+                    </Link>
+                )}
+            </div>
             <div className="grid grid-cols-3 gap-2">
                 {team.players.map((player) => (
                     <div

@@ -10,6 +10,7 @@ type Team = {
     name: string;
     symbol: string;
     logo: string;
+    vlr?: string;
     players: Player[];
 }
 
@@ -24,4 +25,4 @@ type Match = {
     date: Date;
 }
 
-export { Team, Match };
+export { Team, Match, MatchTeam };
