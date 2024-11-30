@@ -3,7 +3,7 @@ import { teams } from "./teams";
 const kru = teams.find((team) => team.name === "KRU");
 const furia = teams.find((team) => team.name === "Furia");
 const vcbChampion = teams.find((team) => team.name === "Campeão do VCB");
-const shinden = teams.find((team) => team.name === "Shinden Esports");
+const shinden = teams.find((team) => team.name === "ShindeN");
 const loud = teams.find((team) => team.name === "LOUD");
 const mibr = teams.find((team) => team.name === "MIBR");
 const twoG = teams.find((team) => team.name === "2Game");
