@@ -8,7 +8,7 @@ interface MatchProps {
 
 export function Match ({ team1, team2, time }: MatchProps) {
     return (
-        <div className="flex items-center gap-2 border border-zinc-500 p-4 rounded">
+        <div className="flex items-center gap-2 border border-zinc-500 p-4 rounded relative h-fit pt-10">
             <div className="flex-1 flex items-center justify-center gap-3">
                 <div className="flex items-center gap-2 select-none" title={team1.team.name}>
                     <img src={team1.team.logo} alt={team1.team.name} className="w-8 h-8 object-scale-down" />
@@ -22,7 +22,9 @@ export function Match ({ team1, team2, time }: MatchProps) {
                     <img src={team2.team.logo} alt={team2.team.name} className="w-8 h-8 object-scale-down" />
                 </div>
             </div>
-            <span>{time}h</span>
+            <div className="absolute top-0 left-0 h-fit w-full flex items-center justify-center bg-zinc-500">
+                <span>{time}h</span>
+            </div>
         </div>
     );
 }

@@ -1,7 +1,8 @@
 import { useParams } from "react-router";
-import { teams } from "../../lib/data";
+import { matches, teams } from "../../lib/data";
 import { NotFound } from "../../not-found";
 import { Link } from "react-router-dom";
+import { Match } from "../schedule/components/match";
 
 export function Team () {
     const params = useParams();
@@ -11,6 +12,8 @@ export function Team () {
     const team = teams.find((team) => team.id === id);
 
     if (!team) return <NotFound />;
+
+    const teamMatches = matches.filter((m) => m.teams.map((t) => t.team.id).includes(team.id));
 
     return (
         <div className="p-8 flex flex-col gap-2">
@@ -47,6 +50,19 @@ export function Team () {
                             />
                         </div>
                     </div>
+                ))}
+            </div>
+            <div>
+                <h1 className="font-semibold text-3xl">Jogos</h1>
+            </div>
+            <div className="grid grid-cols-3 gap-2">
+                {teamMatches.map((m) => (
+                    <Match
+                        key={m.id}
+                        team1={m.teams[0]}
+                        team2={m.teams[1]}
+                        time={m.date.toLocaleDateString() + " " + m.date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                    />
                 ))}
             </div>
         </div>

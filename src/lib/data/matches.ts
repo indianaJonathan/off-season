@@ -183,6 +183,40 @@ const matches: Match[] = [
         date: new Date("2024-11-11T20:00:00.000Z"),
     },
     {
+        id: '6',
+        teams: [
+            {
+                team: vcbChampion!,
+                score: 0,
+            },
+            {
+                team: shinden!,
+                score: 0,
+            }
+        ],
+        maps: [
+            {
+                id: '16',
+                map: maps.find((map) => map.id === '1')!,
+                team: {team: vcbChampion!, score: 0},
+                side: 'attacker',
+            },
+            {
+                id: '17',
+                map: maps.find((map) => map.id === '2')!,
+                team: {team: shinden!, score: 0},
+                side: 'attacker',
+            },
+            {
+                id: '18',
+                map: maps.find((map) => map.id === '3')!,
+                team: {team: vcbChampion!, score: 0},
+                side: 'attacker',
+            }
+        ],
+        date: new Date("2024-11-11T23:00:00.000Z"),
+    },
+    {
         id: "7",
         teams: [
             {
