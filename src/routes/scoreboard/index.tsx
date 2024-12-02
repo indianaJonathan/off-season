@@ -1,4 +1,5 @@
-import { groups } from '../../lib/data';
+import { groups, matches } from '../../lib/data';
+import { Match } from './components/match';
 import { Team } from './components/team';
 
 export function Scoreboard () {
@@ -31,54 +32,24 @@ export function Scoreboard () {
                     <div className='w-full h-full p-2 bg-zinc-500 flex items-center justify-center'>
                         <span className='font-semibold text-xl'>Disputa de 3º lugar</span>
                     </div>
-                    <div className='flex items-center gap-2 p-2'>
-                        <div className='flex items-center gap-2'>
-                            <img
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s'
-                                alt='Terceiro lugar'
-                                className='w-8 h-8 object-scale-down'
-                            />
-                            <span>TBD</span>
-                        </div>
-                        <span>X</span>
-                        <div className='flex items-center gap-2'>
-                            <span>TBD</span>
-                            <img
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s'
-                                alt='Terceiro lugar'
-                                className='w-8 h-8 object-scale-down'
-                            />
-                        </div>
-                    </div>
-                    <div className='flex items-center justify-center bg-zinc-500 p-2 w-full h-full'>
-                        <span className='font-light text-sm'>15/11/2024 17:00h</span>
+                    <div className='flex items-center gap-2 w-full'>
+                        <Match
+                            team1={matches[12].teams[0]}
+                            team2={matches[12].teams[1]}
+                            time={matches[12].date.toLocaleDateString() + " " + matches[12].date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                        />
                     </div>
                 </div>
                 <div className='flex-1 flex flex-col items-center gap-2 rounded-sm border border-zinc-500'>
                     <div className='w-full h-full p-2 bg-zinc-500 flex items-center justify-center'>
                         <span className='font-semibold text-xl'>Grande final</span>
                     </div>
-                    <div className='flex items-center gap-2 p-2'>
-                        <div className='flex items-center gap-2'>
-                            <img
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s'
-                                alt='Grande final'
-                                className='w-8 h-8 object-scale-down'
-                            />
-                            <span>TBD</span>
-                        </div>
-                        <span>X</span>
-                        <div className='flex items-center gap-2'>
-                            <span>TBD</span>
-                            <img
-                                src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s'
-                                alt='Grande final'
-                                className='w-8 h-8 object-scale-down'
-                            />
-                        </div>
-                    </div>
-                    <div className='flex items-center justify-center bg-zinc-500 p-2 w-full h-full'>
-                        <span className='font-light text-sm'>15/11/2024 21:00h</span>
+                    <div className='flex items-center gap-2 w-full'>
+                        <Match
+                            team1={matches[13].teams[0]}
+                            team2={matches[13].teams[1]}
+                            time={matches[13].date.toLocaleDateString() + " " + matches[13].date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                        />
                     </div>
                 </div>
             </div>
