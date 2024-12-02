@@ -14,14 +14,28 @@ type Team = {
     players: Player[];
 }
 
+type Map = {
+    id: string;
+    name: string;
+    image: string;
+}
+
 type MatchTeam = {
     team: Team;
     score: number;
 }
 
+type MatchMap = {
+    id: string;
+    map: Map;
+    team: MatchTeam;
+    side: "attacker" | "defender";
+}
+
 type Match = {
     id: string;
     teams: MatchTeam[];
+    maps: MatchMap[];
     date: Date;
 }
 

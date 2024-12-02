@@ -6,7 +6,7 @@ export function Schedule () {
     return (
         <div className="flex-1 p-8 flex flex-col gap-2 ">
             <h1 className="text-2xl font-semibold">Cronograma</h1>
-            <div className="flex-1 flex flex-col gap-2">
+            <div className="flex-1 grid grid-cols-4 gap-2">
                 {matches.map((match: MatchType) => (
                     <Match
                         key={`match-${match.id}`}

@@ -1,6 +1,47 @@
+import { useEffect, useState } from "react";
+import { matches } from "../../lib/data";
+import { Match } from "../../lib/types";
+
 export function Broadcast () {
+    const [currentMatch, setCurrentMatch] = useState<Match | null>(null);
+
+    function getCurrentMatch () {
+        const todayMatches = matches.filter((m) => m.date.getDate() === new Date().getDate() && m.date.getMonth() === new Date().getMonth() && m.date.getFullYear() === new Date().getFullYear());
+
+        if (todayMatches.length > 0) {
+            const currentTime = new Date().getTime();
+            return todayMatches.filter((m) => m.date.getTime() < currentTime).sort((a, b) => a.date.getTime() - b.date.getTime())[0];
+        }
+        return null;
+    }
+
+    function getChampionshipDate (date: number) {
+        switch (date) {
+            case 9:
+                return "Dia 1";
+            case 10:
+                return "Dia 2";
+            case 11:
+                return "Dia 3";
+            case 12:
+                return "Dia 4";
+            case 13:
+                return "Dia 5";
+            case 14:
+                return "Dia 6";
+            case 15:
+                return "Finais";
+            default:
+                return "";
+        }
+    }
+
+    useEffect(() => {
+        setCurrentMatch(getCurrentMatch());
+    }, []);
+
     return (
-        <div className="flex flex-col divide-y-2 divide-zinc-500">
+        <div className="flex-1 flex flex-col">
             <iframe
                 src={`https://player.twitch.tv/?channel=tixinhadois&parent=${import.meta.env.VITE_APP_TWITCH_PARENT}`}
                 height="500px"
@@ -8,62 +49,39 @@ export function Broadcast () {
                 allowFullScreen={true}
             >
             </iframe>
-            <div className="p-4">
-                <h1 className="text-2xl font-semibold">LOUD vs Furia - OFF//SEASON - Dia 1</h1>
-                <div className="flex flex-wrap gap-4 items-center">
-                    <div className="flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg">
-                        <img
-                            src="https://s2-ge.glbimg.com/iGfFJE3OGnDbnLGPs-VOfGeIZig=/0x0:930x522/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2020/g/8/9EWYsQQgWYrFpGZEsggQ/bind.png"
-                            className="w-full h-full object-cover opacity-30"
-                        />
-                        <div className="absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full">
-                            <span className="font-semibold text-xl">BIND</span>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Pick:</span>
-                                <span className="font-semibold">LOUD</span>
+            <div className="w-full h-px bg-zinc-500" />
+            {currentMatch && (
+                <div className="p-8 flex-1">
+                    <h1 className="text-2xl font-semibold">{currentMatch.teams[0].team.name} vs {currentMatch.teams[1].team.name} - {getChampionshipDate(currentMatch.date.getDate())}</h1>
+                    <div className="flex flex-wrap gap-4 items-center">
+                        {currentMatch.maps.map((map) => (
+                            <div className="flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg">
+                                <img
+                                    src={map.map.image}
+                                    className="w-full h-full object-cover opacity-30"
+                                />
+                                <div className="absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full">
+                                    <img src={map.team.team.logo} alt={map.team.team.name} className="size-8 object-scale-down" />
+                                    <span className="font-semibold text-xl">{map.map.name}</span>
+                                    <div className="flex items-center gap-2">
+                                        <img
+                                            src={currentMatch.teams.filter((t) => t.team.id !== map.team.team.id)[0].team.logo}
+                                            alt={map.team.team.name}
+                                            className="size-8 object-scale-down"
+                                        />
+                                        <span className="font-semibold">{map.side === "attacker" ? "Atacantes" : "Defensores"}</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Def.:</span>
-                                <span className="font-semibold">Furia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg">
-                        <img
-                            src="https://static1-br.millenium.gg/articles/9/40/79/@/84805-ascent-amp_main_media_schema-1.png"
-                            className="w-full h-full object-cover opacity-30"
-                        />
-                        <div className="absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full">
-                            <span className="font-semibold text-xl">ASCENT</span>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Pick:</span>
-                                <span className="font-semibold">Furia</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Def.:</span>
-                                <span className="font-semibold">Furia</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="flex flex-col gap-2 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg">
-                        <img
-                            src="https://www.pichauarena.com.br/wp-content/uploads/2024/03/sunset.png"
-                            className="w-full h-full object-cover opacity-30"
-                        />
-                        <div className="absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full">
-                            <span className="font-semibold text-xl">SUNSET</span>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Pick:</span>
-                                <span className="font-semibold">LOUD</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <span className="font-light">Def.:</span>
-                                <span className="font-semibold">LOUD</span>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
-            </div>
+            )}
+            {!currentMatch && (
+                <div className="flex-1 flex items-center justify-center rounded-md border border-dashed border-zinc-500 m-8">
+                    <h1 className="text-2xl font-semibold italic text-zinc-500">Nenhuma partida em andamento</h1>
+                </div>
+            )}
         </div>
     );
 }
