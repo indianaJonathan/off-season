@@ -226,6 +226,45 @@ const teams: Team[] = [
         symbol: "TBD",
         vlr: "https://www.vlr.gg/event/2200/gamers-club-challengers-league-2024-brazil-split-3",
         players: [],
+    },
+    {
+        id: "9",
+        name: 'Galorys',
+        logo: "https://owcdn.net/img/65c8a0e626f06.png",
+        symbol: "GLRS",
+        vlr: "https://www.vlr.gg/team/10755/galorys",
+        players: [
+            {
+                id: "1",
+                name: "Urango",
+                avatar: "https://www.vlr.gg/img/base/ph/sil.png",
+                role: "initiator",
+            },
+            {
+                id: "2",
+                name: "lukxo",
+                avatar: "https://www.vlr.gg/img/base/ph/sil.png",
+                role: "sentinel",
+            },
+            {
+                id: "3",
+                name: "Sato",
+                avatar: "https://www.vlr.gg/img/base/ph/sil.png",
+                role: "duelist",
+            },
+            {
+                id: "4",
+                name: "RgLMeister",
+                avatar: "https://owcdn.net/img/64408cf1d1d0c.png",
+                role: "controller",
+            },
+            {
+                id: "5",
+                name: "prozin",
+                avatar: "https://owcdn.net/img/60a1c0cbc1751.png",
+                role: "flex",
+            }
+        ],
     }
 ]
 
