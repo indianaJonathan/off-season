@@ -14,6 +14,7 @@ export function Schedule () {
                             team1={match.teams[0]}
                             team2={match.teams[1]}
                             time={match.date.toLocaleDateString() + " " + match.date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                            match={match}
                         />
                     ))}
                 </div>
