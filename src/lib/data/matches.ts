@@ -67,6 +67,7 @@ const matches: Match[] = [
                 done: true,
             }
         ],
+        vlr: "https://www.vlr.gg/425926/kr-esports-vs-shinden-tixinha-invitational-by-bonoxs-r1",
         date: new Date("2024-11-09T20:00:00.000Z"),
     },
     {
@@ -134,6 +135,7 @@ const matches: Match[] = [
                 done: true,
             }
         ],
+        vlr: "https://www.vlr.gg/425965/furia-vs-galorys-tixinha-invitational-by-bonoxs-r1",
         date: new Date("2024-11-09T23:00:00.000Z"),
     },
     {
@@ -174,11 +176,11 @@ const matches: Match[] = [
                 score: [
                     {
                         team: kru!,
-                        score: 0,
+                        score: 6,
                     },
                     {
                         team: galorys!,
-                        score: 0,
+                        score: 1,
                     }
                 ],
             },
@@ -189,6 +191,7 @@ const matches: Match[] = [
                 side: 'attacker',
             }
         ],
+        vlr: "https://www.vlr.gg/425930/kr-esports-vs-galorys-tixinha-invitational-by-bonoxs-groups-r2",
         date: new Date("2024-11-10T20:00:00.000Z"),
     },
     {
@@ -223,6 +226,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425931/furia-vs-shinden-tixinha-invitational-by-bonoxs-groups-r2",
         date: new Date("2024-11-10T23:00:00.000Z"),
     },
     {
@@ -257,6 +261,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425934/kr-esports-vs-furia-tixinha-invitational-by-bonoxs-groups-r3",
         date: new Date("2024-11-11T20:00:00.000Z"),
     },
     {
@@ -291,6 +296,7 @@ const matches: Match[] = [
                 side: 'attacker',
             }
         ],
+        vlr: "https://www.vlr.gg/425935/galorys-vs-shinden-tixinha-invitational-by-bonoxs-groups-r3",
         date: new Date("2024-11-11T23:00:00.000Z"),
     },
     {
@@ -325,6 +331,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425928/mibr-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r1",
         date: new Date("2024-11-12T20:00:00.000Z"),
     },
     {
@@ -359,6 +366,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425966/loud-vs-the-7-tixinha-invitational-by-bonoxs-groups-r1",
         date: new Date("2024-11-12T23:00:00.000Z"),
     },
     {
@@ -393,6 +401,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425932/loud-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r2",
         date: new Date("2024-11-13T20:00:00.000Z"),
     },
     {
@@ -427,6 +436,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425933/mibr-vs-the-7-tixinha-invitational-by-bonoxs-groups-r2",
         date: new Date("2024-11-13T23:00:00.000Z"),
     },
     {
@@ -461,6 +471,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425936/loud-vs-mibr-tixinha-invitational-by-bonoxs-groups-r3",
         date: new Date("2024-11-14T20:00:00.000Z"),
     },
     {
@@ -495,6 +506,7 @@ const matches: Match[] = [
                 side: 'defender',
             }
         ],
+        vlr: "https://www.vlr.gg/425937/2game-esports-vs-the-7-tixinha-invitational-by-bonoxs-groups-r3",
         date: new Date("2024-11-14T23:00:00.000Z"),
     },
     {

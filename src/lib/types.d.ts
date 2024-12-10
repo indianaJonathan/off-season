@@ -39,6 +39,7 @@ type Match = {
     teams: MatchTeam[];
     maps: MatchMap[];
     date: Date;
+    vlr?: string;
 }
 
 export { Team, Match, MatchTeam };

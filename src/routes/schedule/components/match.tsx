@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { MatchTeam, Match as MatchType } from "../../../lib/types";
 
 interface MatchProps {
@@ -53,8 +54,18 @@ export function Match ({ team1, team2, time, match }: MatchProps) {
                     )}
                 )}
             </div>
-            <div className="absolute top-0 left-0 h-fit w-full flex items-center justify-center bg-zinc-500">
+            <div className="absolute top-0 left-0 h-fit w-full flex items-center justify-center gap-8 bg-zinc-500">
                 <span>{time}h</span>
+                {match.vlr && (
+                    <Link
+                        to={match.vlr}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-lg bg-zinc-500 p-1 select-none hover:bg-zinc-600 transition-colors"
+                    >
+                        <img src="https://www.vlr.gg/img/vlr/logo_header.png" alt="VLR logo" className="size-4 object-scale-down" />
+                        <span className="font-light text-sm">VLR</span>
+                    </Link>
+                )}
             </div>
         </div>
     );
