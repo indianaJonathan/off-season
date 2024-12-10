@@ -102,7 +102,7 @@ const matches: Match[] = [
             {
                 id: '8',
                 map: maps.find((map) => map.id === '2')!,
-                team: {team: vcbChampion!, score: 0},
+                team: {team: galorys!, score: 0},
                 side: 'defender',
             },
             {
@@ -198,7 +198,7 @@ const matches: Match[] = [
             {
                 id: '16',
                 map: maps.find((map) => map.id === '1')!,
-                team: {team: vcbChampion!, score: 0},
+                team: {team: galorys!, score: 0},
                 side: 'attacker',
             },
             {
@@ -210,7 +210,7 @@ const matches: Match[] = [
             {
                 id: '18',
                 map: maps.find((map) => map.id === '3')!,
-                team: {team: vcbChampion!, score: 0},
+                team: {team: galorys!, score: 0},
                 side: 'attacker',
             }
         ],
@@ -272,7 +272,7 @@ const matches: Match[] = [
             {
                 id: '23',
                 map: maps.find((map) => map.id === '2')!,
-                team: {team: vcbViceChampion!, score: 0},
+                team: {team: the7!, score: 0},
                 side: 'defender',
             },
             {
@@ -340,7 +340,7 @@ const matches: Match[] = [
             {
                 id: '29',
                 map: maps.find((map) => map.id === '2')!,
-                team: {team: vcbViceChampion!, score: 0},
+                team: {team: the7!, score: 0},
                 side: 'defender',
             },
             {
@@ -402,7 +402,7 @@ const matches: Match[] = [
             {
                 id: '34',
                 map: maps.find((map) => map.id === '1')!,
-                team: {team: vcbViceChampion!, score: 0},
+                team: {team: the7!, score: 0},
                 side: 'attacker',
             },
             {
@@ -414,7 +414,7 @@ const matches: Match[] = [
             {
                 id: '36',
                 map: maps.find((map) => map.id === '3')!,
-                team: {team: vcbViceChampion!, score: 0},
+                team: {team: the7!, score: 0},
                 side: 'defender',
             }
         ],

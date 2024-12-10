@@ -2,12 +2,12 @@ import { teams } from "./teams";
 
 const kru = teams.find((team) => team.name === "KRU");
 const furia = teams.find((team) => team.name === "Furia");
-const vcbChampion = teams.find((team) => team.name === "Campeão do VCB");
+const galorys = teams.find((team) => team.name === "Galorys");
 const shinden = teams.find((team) => team.name === "ShindeN");
 const loud = teams.find((team) => team.name === "LOUD");
 const mibr = teams.find((team) => team.name === "MIBR");
 const twoG = teams.find((team) => team.name === "2Game");
-const vcbViceChampion = teams.find((team) => team.name === "Vice campeão do VCB");
+const the7 = teams.find((team) => team.name === "The 7");
 
 export const groups = [
     {
@@ -16,14 +16,14 @@ export const groups = [
         teams: [
             {
                 ...kru!,
-                score: '0',
+                score: '1',
             },
             {
                 ...furia!,
-                score: '0',
+                score: '1',
             },
             {
-                ...vcbChampion!,
+                ...galorys!,
                 score: '0',
             },
             {
@@ -49,7 +49,7 @@ export const groups = [
                 score: '0',
             },
             {
-                ...vcbViceChampion!,
+                ...the7!,
                 score: '0',
             }
         ]
