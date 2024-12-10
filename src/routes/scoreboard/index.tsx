@@ -17,7 +17,7 @@ export function Scoreboard () {
                             <span className="font-light text-sm">({group.teams.length} times)</span>
                         </div>
                         <div className="flex flex-col gap-2">
-                            {group.teams.sort((a, b) => a.score > b.score ? -1 : 1).map((team) => (
+                            {group.teams.sort((a, b) => Number.parseInt(a.score) > Number.parseInt(b.score) ? -1 : 1).map((team) => (
                                 <Team
                                     key={`team-${team.id}`}
                                     team={team}

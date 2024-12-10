@@ -16,19 +16,19 @@ export const groups = [
         teams: [
             {
                 ...kru!,
-                score: '1',
+                score: '18',
             },
             {
                 ...furia!,
-                score: '1',
+                score: '3',
             },
             {
                 ...galorys!,
-                score: '0',
+                score: '-4',
             },
             {
                 ...shinden!,
-                score: '0',
+                score: '-17',
             }
         ]
     },
