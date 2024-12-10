@@ -29,9 +29,9 @@ type MatchMap = {
     id: string;
     map: Map;
     team: MatchTeam;
-    side: "attacker" | "defender";
+    side: "attacker" | "defender" | "decider";
     score?: MatchTeam[];
-    done?: boolean = false;
+    done?: boolean;
 }
 
 type Match = {

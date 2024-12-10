@@ -63,16 +63,26 @@ export function Broadcast () {
                                     className="w-full h-full object-cover opacity-30"
                                 />
                                 <div className={`absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full ${map.done && "bg-black/70"}`}>
-                                    <img src={map.team.team.logo} alt={map.team.team.name} className="size-8 object-scale-down" />
-                                    <span className="font-semibold text-xl">{map.map.name}</span>
-                                    <div className="flex items-center gap-2">
+                                    {map.side !== "decider" ? (
                                         <img
-                                            src={currentMatch.teams.filter((t) => t.team.id !== map.team.team.id)[0].team.logo}
+                                            src={map.team.team.logo}
                                             alt={map.team.team.name}
                                             className="size-8 object-scale-down"
                                         />
-                                        <span className="font-semibold">{map.side === "attacker" ? "Atacantes" : "Defensores"}</span>
-                                    </div>
+                                    ) : (
+                                        <span className="font-semibold">Decisivo</span>
+                                    )}
+                                    <span className="font-semibold text-xl">{map.map.name}</span>
+                                    {map.side !== "decider" && (
+                                        <div className="flex items-center gap-2">
+                                            <img
+                                                src={currentMatch.teams.filter((t) => t.team.id !== map.team.team.id)[0].team.logo}
+                                                alt={map.team.team.name}
+                                                className="size-8 object-scale-down"
+                                            />
+                                            <span className="font-semibold">{map.side === "attacker" ? "Atacantes" : "Defensores"}</span>
+                                        </div>
+                                    )}
                                     {map.score && (
                                         <div className="flex items-center gap-2 mt-5">
                                             <div className="flex items-center gap-2">
