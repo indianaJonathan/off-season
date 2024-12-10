@@ -29,4 +29,9 @@ export const maps = [
         name: 'Ascent',
         image: 'https://static1-br.millenium.gg/articles/9/40/79/@/84805-ascent-amp_main_media_schema-1.png',
     },
+    {
+        id: '7',
+        name: 'Sunset',
+        image: 'https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2024/03/sunset.png',
+    }
 ]

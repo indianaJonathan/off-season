@@ -6,7 +6,7 @@ export function Broadcast () {
     const [currentMatch, setCurrentMatch] = useState<Match | null>(null);
 
     function getCurrentMatch () {
-        const todayMatches = matches.filter((m) => m.date.getDate() === new Date().getDate() && m.date.getMonth() === new Date().getMonth() && m.date.getFullYear() === new Date().getFullYear());
+        const todayMatches = matches.filter((m) => m.date.getDate() === new Date().getDate());
 
         if (todayMatches.length > 0) {
             const currentTime = new Date().getTime();
@@ -71,6 +71,27 @@ export function Broadcast () {
                                         />
                                         <span className="font-semibold">{map.side === "attacker" ? "Atacantes" : "Defensores"}</span>
                                     </div>
+                                    {map.score && (
+                                        <div className="flex items-center gap-2 mt-5">
+                                            <div className="flex items-center gap-2">
+                                                <img
+                                                    src={map.score[0].team.logo}
+                                                    alt={map.score[0].team.name}
+                                                    className="size-5 object-scale-down"
+                                                />
+                                                <span className="font-semibold">{map.score[0].score}</span>
+                                            </div>
+                                            <span className="text-sm">x</span>
+                                            <div className="flex items-center gap-2">
+                                                <span className="font-semibold">{map.score[1].score}</span>
+                                                <img
+                                                    src={map.score[1].team.logo}
+                                                    alt={map.score[1].team.name}
+                                                    className="size-5 object-scale-down"
+                                                />
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}

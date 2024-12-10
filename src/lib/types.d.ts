@@ -30,6 +30,7 @@ type MatchMap = {
     map: Map;
     team: MatchTeam;
     side: "attacker" | "defender";
+    score?: MatchTeam[];
 }
 
 type Match = {

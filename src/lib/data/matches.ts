@@ -95,20 +95,30 @@ const matches: Match[] = [
         maps: [
             {
                 id: '7',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: kru!, score: 0},
+                map: maps.find((map) => map.id === '2')!,
+                team: {team: kru!, score: 1},
                 side: 'attacker',
+                score: [
+                    {
+                        team: kru!,
+                        score: 4
+                    },
+                    {
+                        team: galorys!,
+                        score: 3
+                    }
+                ],
             },
             {
                 id: '8',
-                map: maps.find((map) => map.id === '2')!,
+                map: maps.find((map) => map.id === '5')!,
                 team: {team: galorys!, score: 0},
                 side: 'defender',
             },
             {
                 id: '9',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: kru!, score: 0},
+                map: maps.find((map) => map.id === '7')!,
+                team: {team: kru!, score: 1},
                 side: 'defender',
             }
         ],
