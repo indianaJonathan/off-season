@@ -213,22 +213,6 @@ const teams: Team[] = [
     },
     {
         id: "7",
-        name: 'Campeão do VCB',
-        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s",
-        symbol: "TBD",
-        vlr: "https://www.vlr.gg/event/2200/gamers-club-challengers-league-2024-brazil-split-3",
-        players: [],
-    },
-    {
-        id: "8",
-        name: 'Vice campeão do VCB',
-        logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s",
-        symbol: "TBD",
-        vlr: "https://www.vlr.gg/event/2200/gamers-club-challengers-league-2024-brazil-split-3",
-        players: [],
-    },
-    {
-        id: "9",
         name: 'Galorys',
         logo: "https://owcdn.net/img/65c8a0e626f06.png",
         symbol: "GLRS",
@@ -265,7 +249,46 @@ const teams: Team[] = [
                 role: "flex",
             }
         ],
-    }
+    },
+    {
+        id: "8",
+        name: 'The 7',
+        logo: "https://owcdn.net/img/664cdd78890e9.png",
+        symbol: "777",
+        vlr: "https://www.vlr.gg/team/15745/the-7",
+        players: [
+            {
+                id: "1",
+                name: "sw",
+                avatar: "https://owcdn.net/img/65b4345aa67aa.png",
+                role: "controller",
+            },
+            {
+                id: "2",
+                name: "tkzin",
+                avatar: "https://www.vlr.gg/img/base/ph/sil.png",
+                role: "duelist",
+            },
+            {
+                id: "3",
+                name: "Shion",
+                avatar: "https://owcdn.net/img/64328a904b653.png",
+                role: "initiator",
+            },
+            {
+                id: "4",
+                name: "pollo",
+                avatar: "https://owcdn.net/img/63cff8ea88111.png",
+                role: "sentinel",
+            },
+            {
+                id: "5",
+                name: "prince",
+                avatar: "https://owcdn.net/img/63b463a44b109.png",
+                role: "flex",
+            },
+        ],
+    },
 ]
 
 export { teams }
