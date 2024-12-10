@@ -143,7 +143,7 @@ const matches: Match[] = [
         teams: [
             {
                 team: kru!,
-                score: 1,
+                score: 2,
             },
             {
                 team: galorys!,
@@ -176,19 +176,21 @@ const matches: Match[] = [
                 score: [
                     {
                         team: kru!,
-                        score: 6,
+                        score: 13,
                     },
                     {
                         team: galorys!,
-                        score: 1,
+                        score: 3,
                     }
                 ],
+                done: true,
             },
             {
                 id: '9',
                 map: maps.find((map) => map.id === '7')!,
                 team: {team: kru!, score: 1},
                 side: 'attacker',
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425930/kr-esports-vs-galorys-tixinha-invitational-by-bonoxs-groups-r2",
