@@ -6,7 +6,9 @@ export function Broadcast () {
     const [currentMatch, setCurrentMatch] = useState<Match | null>(null);
 
     function getCurrentMatch () {
-        const todayMatches = matches.filter((m) => m.date.getDate() === new Date().getDate());
+        const todayStart = new Date(new Date().setHours(0, 0, 0, 0));
+        const todayEnd = new Date(new Date().setHours(23, 59, 59, 0));
+        const todayMatches = matches.filter((m) => (m.date.getTime() >= todayStart.getTime() && m.date.getTime() <= todayEnd.getTime()));
 
         if (todayMatches.length > 0) {
             const currentTime = new Date().getTime();
@@ -55,7 +57,7 @@ export function Broadcast () {
                     <h1 className="text-2xl font-semibold">{currentMatch.teams[0].team.name} vs {currentMatch.teams[1].team.name} - {getChampionshipDate(currentMatch.date.getDate())}</h1>
                     <div className="flex flex-wrap gap-4 items-center">
                         {currentMatch.maps.map((map) => (
-                            <div className={`flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg`}>
+                            <div key={`match-${currentMatch.id}-${map.id}`} className={`flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg`}>
                                 <img
                                     src={map.map.image}
                                     className="w-full h-full object-cover opacity-30"
