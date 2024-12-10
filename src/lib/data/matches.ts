@@ -153,7 +153,7 @@ const matches: Match[] = [
                 id: '7',
                 map: maps.find((map) => map.id === '2')!,
                 team: {team: kru!, score: 1},
-                side: 'attacker',
+                side: 'defender',
                 score: [
                     {
                         team: kru!,
@@ -171,12 +171,22 @@ const matches: Match[] = [
                 map: maps.find((map) => map.id === '5')!,
                 team: {team: galorys!, score: 0},
                 side: 'defender',
+                score: [
+                    {
+                        team: kru!,
+                        score: 0,
+                    },
+                    {
+                        team: galorys!,
+                        score: 0,
+                    }
+                ],
             },
             {
                 id: '9',
                 map: maps.find((map) => map.id === '7')!,
                 team: {team: kru!, score: 1},
-                side: 'defender',
+                side: 'attacker',
             }
         ],
         date: new Date("2024-11-10T20:00:00.000Z"),
