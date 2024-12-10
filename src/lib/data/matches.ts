@@ -229,7 +229,7 @@ const matches: Match[] = [
             }
         ],
         vlr: "https://www.vlr.gg/425931/furia-vs-shinden-tixinha-invitational-by-bonoxs-groups-r2",
-        date: new Date("2024-11-10T23:00:00.000Z"),
+        date: new Date("2024-11-10T22:00:00.000Z"),
     },
     {
         id: "5",

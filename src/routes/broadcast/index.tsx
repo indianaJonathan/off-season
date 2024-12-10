@@ -10,7 +10,7 @@ export function Broadcast () {
 
         if (todayMatches.length > 0) {
             const currentTime = new Date().getTime();
-            return todayMatches.filter((m) => m.date.getTime() < currentTime).sort((a, b) => a.date.getTime() - b.date.getTime())[0];
+            return todayMatches.filter((m) => m.date.getTime() < currentTime).sort((a, b) => b.date.getTime() - a.date.getTime())[0];
         }
         return null;
     }
