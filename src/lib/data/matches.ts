@@ -8,8 +8,8 @@ const kru = teams.find((team) => team.name === "KRU");
 const twoG = teams.find((team) => team.name === "2Game");
 const mibr = teams.find((team) => team.name === "MIBR");
 const shinden = teams.find((team) => team.name === "ShindeN");
-const vcbChampion = teams.find((team) => team.name === "Campeão do VCB");
-const vcbViceChampion = teams.find((team) => team.name === "Vice campeão do VCB");
+const galorys = teams.find((team) => team.name === "Galorys");
+const the7 = teams.find((team) => team.name === "The 7");
 
 const matches: Match[] = [
     {
@@ -17,7 +17,7 @@ const matches: Match[] = [
         teams: [
             {
                 team: kru!,
-                score: 0,
+                score: 2,
             },
             {
                 team: shinden!,
@@ -27,20 +27,20 @@ const matches: Match[] = [
         maps: [
             {
                 id: '1',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: kru!, score: 0},
+                map: maps.find((map) => map.id === '4')!,
+                team: {team: shinden!, score: 0},
                 side: 'attacker',
             },
             {
                 id: '2',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: shinden!, score: 0},
+                map: maps.find((map) => map.id === '1')!,
+                team: {team: kru!, score: 0},
                 side: 'defender',
             },
             {
                 id: '3',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: kru!, score: 0},
+                map: maps.find((map) => map.id === '5')!,
+                team: {team: shinden!, score: 0},
                 side: 'defender',
             }
         ],
@@ -51,30 +51,30 @@ const matches: Match[] = [
         teams: [
             {
                 team: furia!,
-                score: 0,
+                score: 2,
             },
             {
-                team: vcbChampion!,
-                score: 0,
+                team: galorys!,
+                score: 1,
             }
         ],
         maps: [
             {
                 id: '4',
                 map: maps.find((map) => map.id === '4')!,
-                team: {team: furia!, score: 0},
-                side: 'attacker',
+                team: {team: galorys!, score: 0},
+                side: 'defender',
             },
             {
                 id: '5',
-                map: maps.find((map) => map.id === '5')!,
-                team: {team: vcbChampion!, score: 0},
+                map: maps.find((map) => map.id === '6')!,
+                team: {team: furia!, score: 1},
                 side: 'defender',
             },
             {
                 id: '6',
-                map: maps.find((map) => map.id === '6')!,
-                team: {team: furia!, score: 0},
+                map: maps.find((map) => map.id === '1')!,
+                team: {team: galorys!, score: 0},
                 side: 'defender',
             }
         ],
@@ -85,10 +85,10 @@ const matches: Match[] = [
         teams: [
             {
                 team: kru!,
-                score: 0,
+                score: 1,
             },
             {
-                team: vcbChampion!,
+                team: galorys!,
                 score: 0,
             }
         ],
@@ -186,7 +186,7 @@ const matches: Match[] = [
         id: '6',
         teams: [
             {
-                team: vcbChampion!,
+                team: galorys!,
                 score: 0,
             },
             {
@@ -258,7 +258,7 @@ const matches: Match[] = [
                 score: 0,
             },
             {
-                team: vcbViceChampion!,
+                team: the7!,
                 score: 0,
             }
         ],
@@ -326,7 +326,7 @@ const matches: Match[] = [
                 score: 0,
             },
             {
-                team: vcbViceChampion!,
+                team: the7!,
                 score: 0,
             }
         ],
@@ -394,7 +394,7 @@ const matches: Match[] = [
                 score: 0,
             },
             {
-                team: vcbViceChampion!,
+                team: the7!,
                 score: 0,
             }
         ],
