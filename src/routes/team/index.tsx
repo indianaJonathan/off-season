@@ -62,6 +62,7 @@ export function Team () {
                         team1={m.teams[0]}
                         team2={m.teams[1]}
                         time={m.date.toLocaleDateString() + " " + m.date.toLocaleTimeString("pt-BR", { hour: "2-digit", minute: "2-digit" })}
+                        match={m}
                     />
                 ))}
             </div>

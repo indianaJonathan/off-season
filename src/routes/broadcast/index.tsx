@@ -55,12 +55,12 @@ export function Broadcast () {
                     <h1 className="text-2xl font-semibold">{currentMatch.teams[0].team.name} vs {currentMatch.teams[1].team.name} - {getChampionshipDate(currentMatch.date.getDate())}</h1>
                     <div className="flex flex-wrap gap-4 items-center">
                         {currentMatch.maps.map((map) => (
-                            <div className="flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg">
+                            <div className={`flex gap-4 items-center justify-center overflow-hidden w-52 h-64 relative rounded-lg`}>
                                 <img
                                     src={map.map.image}
                                     className="w-full h-full object-cover opacity-30"
                                 />
-                                <div className="absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full">
+                                <div className={`absolute top-0 left-0 flex flex-col gap-2 items-center justify-center w-full h-full ${map.done && "bg-black/70"}`}>
                                     <img src={map.team.team.logo} alt={map.team.team.name} className="size-8 object-scale-down" />
                                     <span className="font-semibold text-xl">{map.map.name}</span>
                                     <div className="flex items-center gap-2">

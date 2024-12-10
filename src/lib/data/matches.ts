@@ -30,18 +30,41 @@ const matches: Match[] = [
                 map: maps.find((map) => map.id === '4')!,
                 team: {team: shinden!, score: 0},
                 side: 'attacker',
+                score: [
+                    {
+                        team: kru!,
+                        score: 13
+                    },
+                    {
+                        team: shinden!,
+                        score: 11
+                    },
+                ],
+                done: true,
             },
             {
                 id: '2',
                 map: maps.find((map) => map.id === '1')!,
                 team: {team: kru!, score: 0},
                 side: 'defender',
+                score: [
+                    {
+                        team: kru!,
+                        score: 15
+                    },
+                    {
+                        team: shinden!,
+                        score: 13
+                    },
+                ],
+                done: true,
             },
             {
                 id: '3',
                 map: maps.find((map) => map.id === '5')!,
                 team: {team: shinden!, score: 0},
                 side: 'defender',
+                done: true,
             }
         ],
         date: new Date("2024-11-09T20:00:00.000Z"),
@@ -64,18 +87,51 @@ const matches: Match[] = [
                 map: maps.find((map) => map.id === '4')!,
                 team: {team: galorys!, score: 0},
                 side: 'defender',
+                score: [
+                    {
+                        team: furia!,
+                        score: 5
+                    },
+                    {
+                        team: galorys!,
+                        score: 13
+                    },
+                ],
+                done: true,
             },
             {
                 id: '5',
                 map: maps.find((map) => map.id === '6')!,
                 team: {team: furia!, score: 1},
                 side: 'defender',
+                score: [
+                    {
+                        team: furia!,
+                        score: 15
+                    },
+                    {
+                        team: galorys!,
+                        score: 13
+                    },
+                ],
+                done: true,
             },
             {
                 id: '6',
                 map: maps.find((map) => map.id === '1')!,
                 team: {team: galorys!, score: 0},
                 side: 'defender',
+                score: [
+                    {
+                        team: furia!,
+                        score: 13
+                    },
+                    {
+                        team: galorys!,
+                        score: 4
+                    },
+                ],
+                done: true,
             }
         ],
         date: new Date("2024-11-09T23:00:00.000Z"),
@@ -101,13 +157,14 @@ const matches: Match[] = [
                 score: [
                     {
                         team: kru!,
-                        score: 4
+                        score: 13
                     },
                     {
                         team: galorys!,
-                        score: 3
+                        score: 9
                     }
                 ],
+                done: true,
             },
             {
                 id: '8',
