@@ -13,7 +13,9 @@ export function Team ({ team }: { team: TeamType }) {
                 <span>{team.name}</span>
             </div>
             <div className="px-3 py-2">
-                <span className="font-semibold text-lg">
+                <span
+                    className={`font-semibold text-lg ${Number.parseInt(team.score) > 0 ? 'text-green-500' : (Number.parseInt(team.score) === 0 ? 'text-zinc-300' : 'text-red-500')}`}
+                >
                     {team.score}
                 </span>
             </div>

@@ -205,7 +205,7 @@ const matches: Match[] = [
             },
             {
                 team: shinden!,
-                score: 0,
+                score: 1,
             }
         ],
         maps: [
@@ -234,6 +234,23 @@ const matches: Match[] = [
                 score: [
                     {
                         team: shinden!,
+                        score: 13,
+                    },
+                    {
+                        team: furia!,
+                        score: 7,
+                    }
+                ],
+                done: true,
+            },
+            {
+                id: '12',
+                map: maps.find((map) => map.name === 'Bind')!,
+                team: {team: shinden!, score: 0},
+                side: 'decider',
+                score: [
+                    {
+                        team: shinden!,
                         score: 0,
                     },
                     {
@@ -242,12 +259,6 @@ const matches: Match[] = [
                     }
                 ],
                 done: false,
-            },
-            {
-                id: '12',
-                map: maps.find((map) => map.name === 'Bind')!,
-                team: {team: shinden!, score: 0},
-                side: 'decider',
             }
         ],
         vlr: "https://www.vlr.gg/425931/furia-vs-shinden-tixinha-invitational-by-bonoxs-groups-r2",
