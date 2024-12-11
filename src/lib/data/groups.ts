@@ -20,11 +20,11 @@ export const groups = [
             },
             {
                 ...furia!,
-                score: '3',
+                score: '12',
             },
             {
                 ...galorys!,
-                score: '-4',
+                score: '-13',
             },
             {
                 ...shinden!,
