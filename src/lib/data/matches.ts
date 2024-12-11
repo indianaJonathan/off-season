@@ -251,14 +251,14 @@ const matches: Match[] = [
                 score: [
                     {
                         team: shinden!,
-                        score: 0,
+                        score: 13,
                     },
                     {
                         team: furia!,
-                        score: 0,
+                        score: 7,
                     }
                 ],
-                done: false,
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425931/furia-vs-shinden-tixinha-invitational-by-bonoxs-groups-r2",
