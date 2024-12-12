@@ -409,7 +409,7 @@ const matches: Match[] = [
             },
             {
                 team: twoG!,
-                score: 0,
+                score: 1,
             }
         ],
         maps: [
@@ -421,6 +421,23 @@ const matches: Match[] = [
                 score: [
                     {
                         team: mibr!,
+                        score: 6,
+                    },
+                    {
+                        team: twoG!,
+                        score: 13,
+                    }
+                ],
+                done: true,
+            },
+            {
+                id: '20',
+                map: maps.find((map) => map.name === 'Pearl')!,
+                team: {team: mibr!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: mibr!,
                         score: 0,
                     },
                     {
@@ -429,12 +446,6 @@ const matches: Match[] = [
                     }
                 ],
                 done: false,
-            },
-            {
-                id: '20',
-                map: maps.find((map) => map.name === 'Pearl')!,
-                team: {team: mibr!, score: 0},
-                side: 'attacker',
             },
             {
                 id: '21',
