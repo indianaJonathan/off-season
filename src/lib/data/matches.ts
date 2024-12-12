@@ -415,25 +415,36 @@ const matches: Match[] = [
         maps: [
             {
                 id: '19',
-                map: maps.find((map) => map.id === '1')!,
+                map: maps.find((map) => map.name === 'Split')!,
+                team: {team: twoG!, score: 0},
+                side: 'defender',
+                score: [
+                    {
+                        team: mibr!,
+                        score: 0,
+                    },
+                    {
+                        team: twoG!,
+                        score: 0,
+                    }
+                ],
+                done: false,
+            },
+            {
+                id: '20',
+                map: maps.find((map) => map.id === 'Pearl')!,
                 team: {team: mibr!, score: 0},
                 side: 'attacker',
             },
             {
-                id: '20',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: twoG!, score: 0},
-                side: 'defender',
-            },
-            {
                 id: '21',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: mibr!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.id === 'Abyss')!,
+                team: {team: twoG!, score: 0},
+                side: 'decider',
             }
         ],
         vlr: "https://www.vlr.gg/425928/mibr-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r1",
-        date: new Date("2024-12-12T20:00:00.000Z"),
+        date: new Date("2024-11-12T20:00:00.000Z"),
     },
     {
         id: '8',
