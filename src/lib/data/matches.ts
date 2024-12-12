@@ -455,14 +455,14 @@ const matches: Match[] = [
                 score: [
                     {
                         team: mibr!,
-                        score: 0,
+                        score: 13,
                     },
                     {
                         team: twoG!,
-                        score: 0,
+                        score: 9,
                     }
                 ],
-                done: false,
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425928/mibr-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r1",
