@@ -483,21 +483,32 @@ const matches: Match[] = [
         maps: [
             {
                 id: '22',
-                map: maps.find((map) => map.id === '1')!,
+                map: maps.find((map) => map.name === 'Haven')!,
                 team: {team: loud!, score: 0},
-                side: 'attacker',
+                side: 'defender',
+                score: [
+                    {
+                        team: loud!,
+                        score: 0,
+                    },
+                    {
+                        team: the7!,
+                        score: 0,
+                    }
+                ],
+                done: false,
             },
             {
                 id: '23',
-                map: maps.find((map) => map.id === '2')!,
+                map: maps.find((map) => map.name === 'Sunset')!,
                 team: {team: the7!, score: 0},
                 side: 'defender',
             },
             {
                 id: '24',
-                map: maps.find((map) => map.id === '3')!,
+                map: maps.find((map) => map.name === 'Pearl')!,
                 team: {team: loud!, score: 0},
-                side: 'defender',
+                side: 'decider',
             }
         ],
         vlr: "https://www.vlr.gg/425966/loud-vs-the-7-tixinha-invitational-by-bonoxs-groups-r1",
