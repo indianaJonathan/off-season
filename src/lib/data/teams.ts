@@ -209,7 +209,38 @@ const teams: Team[] = [
         logo: "https://owcdn.net/img/6748dec4df18c.png",
         symbol: "SDN",
         vlr: "https://www.vlr.gg/team/16971/shinden/",
-        players: [],
+        players: [
+            {
+                id: "1",
+                name: "murizzz",
+                avatar: "https://owcdn.net/img/64408d0a384c1.png",
+                role: "initiator",
+            },
+            {
+                id: "2",
+                name: "snw",
+                avatar: "https://owcdn.net/img/620fd32945261.png",
+                role: "duelist",
+            },
+            {
+                id: "3",
+                name: "david",
+                avatar: "https://owcdn.net/img/6468f5d5d6709.png",
+                role: "controller",
+            },
+            {
+                id: "4",
+                name: "rubkkoide",
+                avatar: "https://owcdn.net/img/6468f670d55ec.png",
+                role: "flex",
+            },
+            {
+                id: "5",
+                name: "maxhinh9",
+                avatar: "https://www.vlr.gg/img/base/ph/sil.png",
+                role: "sentinel",
+            }
+        ],
     },
     {
         id: "7",

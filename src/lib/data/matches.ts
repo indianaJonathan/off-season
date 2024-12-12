@@ -269,31 +269,64 @@ const matches: Match[] = [
         teams: [
             {
                 team: kru!,
-                score: 0,
+                score: 1,
             },
             {
                 team: furia!,
-                score: 0,
+                score: 2,
             }
         ],
         maps: [
             {
                 id: '13',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: kru!, score: 0},
+                map: maps.find((map) => map.name === 'Abyss')!,
+                team: {team: furia!, score: 0},
                 side: 'attacker',
+                score: [
+                    {
+                        team: furia!,
+                        score: 13,
+                    },
+                    {
+                        team: kru!,
+                        score: 10,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '14',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: furia!, score: 0},
+                map: maps.find((map) => map.name === 'Split')!,
+                team: {team: kru!, score: 0},
                 side: 'defender',
+                score: [
+                    {
+                        team: furia!,
+                        score: 7,
+                    },
+                    {
+                        team: kru!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '15',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: kru!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Bind')!,
+                team: {team: furia!, score: 0},
+                side: 'decider',
+                score: [
+                    {
+                        team: furia!,
+                        score: 13,
+                    },
+                    {
+                        team: kru!,
+                        score: 4,
+                    }
+                ],
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425934/kr-esports-vs-furia-tixinha-invitational-by-bonoxs-groups-r3",
@@ -304,31 +337,64 @@ const matches: Match[] = [
         teams: [
             {
                 team: galorys!,
-                score: 0,
+                score: 2,
             },
             {
                 team: shinden!,
-                score: 0,
+                score: 1,
             }
         ],
         maps: [
             {
                 id: '16',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: galorys!, score: 0},
+                map: maps.find((map) => map.name === 'Pearl')!,
+                team: {team: shinden!, score: 0},
                 side: 'attacker',
+                score: [
+                    {
+                        team: shinden!,
+                        score: 2,
+                    },
+                    {
+                        team: galorys!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '17',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: shinden!, score: 0},
-                side: 'attacker',
+                map: maps.find((map) => map.name === 'Abyss')!,
+                team: {team: galorys!, score: 0},
+                side: 'defender',
+                score: [
+                    {
+                        team: shinden!,
+                        score: 13,
+                    },
+                    {
+                        team: galorys!,
+                        score: 8,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '18',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: galorys!, score: 0},
-                side: 'attacker',
+                map: maps.find((map) => map.name === 'Split')!,
+                team: {team: shinden!, score: 0},
+                side: 'decider',
+                score: [
+                    {
+                        team: shinden!,
+                        score: 9,
+                    },
+                    {
+                        team: galorys!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425935/galorys-vs-shinden-tixinha-invitational-by-bonoxs-groups-r3",
@@ -548,14 +614,7 @@ const matches: Match[] = [
         id: '13',
         teams: [
             {
-                team: {
-                    name: 'À definir',
-                    id: '0',
-                    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s',
-                    symbol: 'TBD',
-                    vlr: 'https://www.vlr.gg/event/2278/tixinha-invitational-by-bonoxs',
-                    players: [],
-                },
+                team: kru!,
                 score: 0,
             },
             {
@@ -577,14 +636,7 @@ const matches: Match[] = [
         id: '14',
         teams: [
             {
-                team: {
-                    name: 'À definir',
-                    id: '0',
-                    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s',
-                    symbol: 'TBD',
-                    vlr: 'https://www.vlr.gg/event/2278/tixinha-invitational-by-bonoxs',
-                    players: [],
-                },
+                team: furia!,
                 score: 0,
             },
             {
