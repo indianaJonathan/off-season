@@ -44,9 +44,9 @@ export function Team () {
                         <div className="flex flex-col items-center justify-center">
                             <span className="font-semibold text-lg">{player.name}</span>
                             <img
-                                src={getRoleIcon(player.role)}
+                                src={`/assets/${player.role}.png`}
                                 alt={player.role}
-                                className={`w-8 h-8 object-scale-down ${player.role === "flex" ? "invert" : ""}`}
+                                className={`w-8 h-8 object-scale-down`}
                             />
                         </div>
                     </div>
@@ -70,19 +70,19 @@ export function Team () {
     );
 }
 
-function getRoleIcon (role: string) {
-    switch (role) {
-        case "duelist":
-            return "https://cdn3.emoji.gg/emojis/4987-duelist-valorant.png";
-        case "initiator":
-            return "https://konect.gg/assets/images/GameValorantRoleInitiator.png";
-        case "sentinel":
-            return "https://cdn3.emoji.gg/emojis/5030-sentinel-valorant.png";
-        case "controller":
-            return "https://cdn3.emoji.gg/emojis/8733-controller-valorant.png";
-        case "flex":
-            return "https://cdn0.iconfinder.com/data/icons/positive-and-neutral-character-traits-alphabet-v-w/277/positive-wxyz006-512.png";
-        default:
-            return "🗡️";
-    }
-}
+// function getRoleIcon (role: string) {
+//     switch (role) {
+//         case "duelist":
+//             return "https://cdn3.emoji.gg/emojis/4987-duelist-valorant.png";
+//         case "initiator":
+//             return "https://konect.gg/assets/images/GameValorantRoleInitiator.png";
+//         case "sentinel":
+//             return "https://cdn3.emoji.gg/emojis/5030-sentinel-valorant.png";
+//         case "controller":
+//             return "https://cdn3.emoji.gg/emojis/8733-controller-valorant.png";
+//         case "flex":
+//             return "https://cdn0.iconfinder.com/data/icons/positive-and-neutral-character-traits-alphabet-v-w/277/positive-wxyz006-512.png";
+//         default:
+//             return "🗡️";
+//     }
+// }
