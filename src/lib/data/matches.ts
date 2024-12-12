@@ -444,7 +444,7 @@ const matches: Match[] = [
             }
         ],
         vlr: "https://www.vlr.gg/425928/mibr-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r1",
-        date: new Date("2024-11-12T20:00:00.000Z"),
+        date: new Date("2024-12-12T20:00:00.000Z"),
     },
     {
         id: '8',
