@@ -432,13 +432,13 @@ const matches: Match[] = [
             },
             {
                 id: '20',
-                map: maps.find((map) => map.id === 'Pearl')!,
+                map: maps.find((map) => map.name === 'Pearl')!,
                 team: {team: mibr!, score: 0},
                 side: 'attacker',
             },
             {
                 id: '21',
-                map: maps.find((map) => map.id === 'Abyss')!,
+                map: maps.find((map) => map.name === 'Abyss')!,
                 team: {team: twoG!, score: 0},
                 side: 'decider',
             }
