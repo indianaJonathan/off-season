@@ -34,7 +34,7 @@ export function App() {
       </div>
       <div>
         <h1 className="font-semibold text-3xl">Times</h1>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-8 gap-4">
           {teams.map((team) => (
             <Link
               to={`/teams/${team.id}`}

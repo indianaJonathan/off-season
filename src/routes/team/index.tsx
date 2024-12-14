@@ -30,19 +30,23 @@ export function Team () {
                     </Link>
                 )}
             </div>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-4 gap-2">
                 {team.players.map((player) => (
                     <div
                         key={player.id}
-                        className="flex flex-col items-center justify-center gap-2 rounded-lg border border-zinc-500 p-4 select-none hover:bg-zinc-500 transition-colors"
+                        className="flex items-center justify-between gap-2 rounded-lg border border-zinc-500 p-4 select-none hover:bg-zinc-500 transition-colors"
                     >
-                        <img
-                            src={player.avatar || "https://www.vlr.gg/img/base/ph/sil.png"}
-                            alt={player.name}
-                            className="w-16 h-16 object-scale-down"
-                        />
+                        <div className="flex-1 flex items-center justify-center">
+                            <img
+                                src={player.avatar || "https://www.vlr.gg/img/base/ph/sil.png"}
+                                alt={player.name}
+                                className="w-16 h-16 object-scale-down"
+                            />
+                            <div className="flex-1 flex items-start h-full">
+                                <span className="font-semibold text-lg">{player.name}</span>
+                            </div>
+                        </div>
                         <div className="flex flex-col items-center justify-center">
-                            <span className="font-semibold text-lg">{player.name}</span>
                             <img
                                 src={`/assets/${player.role}.png`}
                                 alt={player.role}
@@ -55,7 +59,7 @@ export function Team () {
             <div>
                 <h1 className="font-semibold text-3xl">Jogos</h1>
             </div>
-            <div className="grid grid-cols-3 gap-2">
+            <div className="grid grid-cols-5 gap-2">
                 {teamMatches.map((m) => (
                     <Match
                         key={m.id}
