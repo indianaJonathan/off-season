@@ -609,21 +609,44 @@ const matches: Match[] = [
         maps: [
             {
                 id: '28',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: mibr!, score: 0},
+                map: maps.find((map) => map.name === 'Abyss')!,
+                team: {team: the7!, score: 0},
                 side: 'attacker',
+                score: [
+                    {
+                        team: mibr!,
+                        score: 13,
+                    },
+                    {
+                        team: the7!,
+                        score: 4,
+                    },
+                ],
+                done: true,
             },
             {
                 id: '29',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: the7!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Sunset')!,
+                team: {team: mibr!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: mibr!,
+                        score: 13,
+                    },
+                    {
+                        team: the7!,
+                        score: 7,
+                    },
+                ],
+                done: true,
             },
             {
                 id: '30',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: mibr!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Pearl')!,
+                team: {team: the7!, score: 0},
+                side: 'decider',
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425933/mibr-vs-the-7-tixinha-invitational-by-bonoxs-groups-r2",
