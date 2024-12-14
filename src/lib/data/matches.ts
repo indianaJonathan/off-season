@@ -473,7 +473,7 @@ const matches: Match[] = [
         teams: [
             {
                 team: loud!,
-                score: 0,
+                score: 2,
             },
             {
                 team: the7!,
@@ -489,26 +489,38 @@ const matches: Match[] = [
                 score: [
                     {
                         team: loud!,
-                        score: 0,
+                        score: 13,
                     },
                     {
                         team: the7!,
-                        score: 0,
+                        score: 9,
                     }
                 ],
-                done: false,
+                done: true,
             },
             {
                 id: '23',
                 map: maps.find((map) => map.name === 'Sunset')!,
                 team: {team: the7!, score: 0},
-                side: 'defender',
+                side: 'attacker',
+                score: [
+                    {
+                        team: loud!,
+                        score: 13,
+                    },
+                    {
+                        team: the7!,
+                        score: 4,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '24',
                 map: maps.find((map) => map.name === 'Pearl')!,
                 team: {team: loud!, score: 0},
                 side: 'decider',
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425966/loud-vs-the-7-tixinha-invitational-by-bonoxs-groups-r1",
@@ -519,31 +531,64 @@ const matches: Match[] = [
         teams: [
             {
                 team: loud!,
-                score: 0,
+                score: 1,
             },
             {
                 team: twoG!,
-                score: 0,
+                score: 2,
             }
         ],
         maps: [
             {
                 id: '25',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: loud!, score: 0},
-                side: 'attacker',
+                map: maps.find((map) => map.name === 'Abyss')!,
+                team: {team: twoG!, score: 0},
+                side: 'defender',
+                score: [
+                    {
+                        team: loud!,
+                        score: 6,
+                    },
+                    {
+                        team: twoG!,
+                        score: 13,
+                    }
+                ],
+                done: true
             },
             {
                 id: '26',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: twoG!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Haven')!,
+                team: {team: loud!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: loud!,
+                        score: 13,
+                    },
+                    {
+                        team: twoG!,
+                        score: 7,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '27',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: loud!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Ascent')!,
+                team: {team: twoG!, score: 0},
+                side: 'decider',
+                score: [
+                    {
+                        team: loud!,
+                        score: 4,
+                    },
+                    {
+                        team: twoG!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425932/loud-vs-2game-esports-tixinha-invitational-by-bonoxs-groups-r2",

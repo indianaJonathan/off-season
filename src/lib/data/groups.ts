@@ -38,19 +38,19 @@ export const groups = [
         teams: [
             {
                 ...loud!,
-                score: '0',
+                score: '13',
             },
             {
                 ...mibr!,
-                score: '0',
+                score: '-1',
             },
             {
                 ...twoG!,
-                score: '0',
+                score: '1',
             },
             {
                 ...the7!,
-                score: '0',
+                score: '-13',
             }
         ]
     }
