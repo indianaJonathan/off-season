@@ -17,18 +17,22 @@ export const groups = [
             {
                 ...kru!,
                 score: '12',
+                place: 2,
             },
             {
                 ...furia!,
                 score: '18',
+                place: 1,
             },
             {
                 ...galorys!,
                 score: '-7',
+                place: 3,
             },
             {
                 ...shinden!,
                 score: '-23',
+                place: 4,
             }
         ]
     },
@@ -38,19 +42,23 @@ export const groups = [
         teams: [
             {
                 ...loud!,
-                score: '13',
+                score: '3',
+                place: 2,
             },
             {
                 ...mibr!,
-                score: '-1',
+                score: '14',
+                place: 1,
             },
             {
                 ...twoG!,
-                score: '1',
+                score: '11',
+                place: 3,
             },
             {
                 ...the7!,
-                score: '-13',
+                score: '-28',
+                place: 4,
             }
         ]
     }

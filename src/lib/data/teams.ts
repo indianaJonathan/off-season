@@ -284,7 +284,7 @@ const teams: Team[] = [
     {
         id: "8",
         name: 'The 7',
-        logo: "https://owcdn.net/img/664cdd78890e9.png",
+        logo: "https://owcdn.net/img/664cdd6e33081.png",
         symbol: "777",
         vlr: "https://www.vlr.gg/team/15745/the-7",
         players: [
