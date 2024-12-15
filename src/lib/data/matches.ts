@@ -815,6 +815,7 @@ const matches: Match[] = [
                 done: false,
             }
         ],
+        vlr: "https://www.vlr.gg/430098/kr-esports-vs-2game-esports-tixinha-invitational-by-bonoxs-cf",
         date: new Date("2024-12-15T20:00:00.000Z"),
     },
     {
@@ -864,6 +865,7 @@ const matches: Match[] = [
                 done: false,
             }
         ],
+        vlr: "https://www.vlr.gg/430099/furia-vs-mibr-tixinha-invitational-by-bonoxs-gf",
         date: new Date("2024-12-15T23:00:00.000Z"),
     }
 ]
