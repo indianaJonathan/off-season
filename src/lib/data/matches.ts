@@ -661,27 +661,50 @@ const matches: Match[] = [
             },
             {
                 team: mibr!,
-                score: 0,
+                score: 2,
             }
         ],
         maps: [
             {
                 id: '31',
-                map: maps.find((map) => map.id === '1')!,
-                team: {team: loud!, score: 0},
-                side: 'attacker',
+                map: maps.find((map) => map.name === 'Bind')!,
+                team: {team: mibr!, score: 0},
+                side: 'defender',
+                score: [
+                    {
+                        team: loud!,
+                        score: 9,
+                    },
+                    {
+                        team: mibr!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '32',
-                map: maps.find((map) => map.id === '2')!,
-                team: {team: mibr!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Haven')!,
+                team: {team: loud!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: loud!,
+                        score: 6,
+                    },
+                    {
+                        team: mibr!,
+                        score: 13,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '33',
-                map: maps.find((map) => map.id === '3')!,
-                team: {team: loud!, score: 0},
-                side: 'defender',
+                map: maps.find((map) => map.name === 'Sunset')!,
+                team: {team: mibr!, score: 0},
+                side: 'decider',
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425936/loud-vs-mibr-tixinha-invitational-by-bonoxs-groups-r3",
@@ -692,7 +715,7 @@ const matches: Match[] = [
         teams: [
             {
                 team: twoG!,
-                score: 0,
+                score: 2,
             },
             {
                 team: the7!,
@@ -702,21 +725,44 @@ const matches: Match[] = [
         maps: [
             {
                 id: '34',
-                map: maps.find((map) => map.id === '1')!,
+                map: maps.find((map) => map.name === 'Haven')!,
                 team: {team: the7!, score: 0},
                 side: 'attacker',
+                score: [
+                    {
+                        team: twoG!,
+                        score: 13,
+                    },
+                    {
+                        team: the7!,
+                        score: 6,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '35',
-                map: maps.find((map) => map.id === '2')!,
+                map: maps.find((map) => map.name === 'Abyss')!,
                 team: {team: twoG!, score: 0},
-                side: 'defender',
+                side: 'attacker',
+                score: [
+                    {
+                        team: twoG!,
+                        score: 13,
+                    },
+                    {
+                        team: the7!,
+                        score: 6,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '36',
-                map: maps.find((map) => map.id === '3')!,
+                map: maps.find((map) => map.name === 'Bind')!,
                 team: {team: the7!, score: 0},
-                side: 'defender',
+                side: 'decider',
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/425937/2game-esports-vs-the-7-tixinha-invitational-by-bonoxs-groups-r3",
@@ -730,14 +776,7 @@ const matches: Match[] = [
                 score: 0,
             },
             {
-                team: {
-                    name: 'À definir',
-                    id: '0',
-                    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s',
-                    symbol: 'TBD',
-                    vlr: 'https://www.vlr.gg/event/2278/tixinha-invitational-by-bonoxs',
-                    players: [],
-                },
+                team: twoG!,
                 score: 0,
             }
         ],
@@ -752,14 +791,7 @@ const matches: Match[] = [
                 score: 0,
             },
             {
-                team: {
-                    name: 'À definir',
-                    id: '0',
-                    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcnAg9QM_CEWzIJJHAONlEyPR9OQB2fRa_0A&s',
-                    symbol: 'TBD',
-                    vlr: 'https://www.vlr.gg/event/2278/tixinha-invitational-by-bonoxs',
-                    players: [],
-                },
+                team: mibr!,
                 score: 0,
             }
         ],

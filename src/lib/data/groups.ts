@@ -42,22 +42,22 @@ export const groups = [
         teams: [
             {
                 ...loud!,
-                score: '3',
-                place: 2,
+                score: '-8',
+                place: 3,
             },
             {
                 ...mibr!,
-                score: '14',
+                score: '25',
                 place: 1,
             },
             {
                 ...twoG!,
-                score: '11',
-                place: 3,
+                score: '20',
+                place: 2,
             },
             {
                 ...the7!,
-                score: '-28',
+                score: '-37',
                 place: 4,
             }
         ]
