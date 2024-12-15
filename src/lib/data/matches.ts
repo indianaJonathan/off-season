@@ -780,7 +780,41 @@ const matches: Match[] = [
                 score: 0,
             }
         ],
-        maps: [],
+        maps: [
+            {
+                id: '37',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: kru!, score: 0},
+                side: 'defender',
+                done: false,
+            },
+            {
+                id: '38',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: twoG!, score: 0},
+                side: 'defender',
+                done: false,
+            },
+            {
+                id: '39',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: kru!, score: 0},
+                side: 'decider',
+                done: false,
+            }
+        ],
         date: new Date("2024-12-15T20:00:00.000Z"),
     },
     {
@@ -795,7 +829,41 @@ const matches: Match[] = [
                 score: 0,
             }
         ],
-        maps: [],
+        maps: [
+            {
+                id: '40',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: furia!, score: 0},
+                side: 'defender',
+                done: false,
+            },
+            {
+                id: '41',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: mibr!, score: 0},
+                side: 'defender',
+                done: false,
+            },
+            {
+                id: '42',
+                map: {
+                    id: 'tbd',
+                    name: 'TBD',
+                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
+                },
+                team: {team: furia!, score: 0},
+                side: 'decider',
+                done: false,
+            }
+        ],
         date: new Date("2024-12-15T23:00:00.000Z"),
     }
 ]
