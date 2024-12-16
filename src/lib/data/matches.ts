@@ -773,7 +773,7 @@ const matches: Match[] = [
         teams: [
             {
                 team: kru!,
-                score: 0,
+                score: 2,
             },
             {
                 team: twoG!,
@@ -783,36 +783,44 @@ const matches: Match[] = [
         maps: [
             {
                 id: '37',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
-                team: {team: kru!, score: 0},
-                side: 'defender',
-                done: false,
+                map: maps.find((map) => map.name === 'Abyss')!,
+                team: {team: twoG!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: kru!,
+                        score: 13,
+                    },
+                    {
+                        team: twoG!,
+                        score: 5,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '38',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
-                team: {team: twoG!, score: 0},
-                side: 'defender',
-                done: false,
+                map: maps.find((map) => map.name === "Bind")!,
+                team: {team: kru!, score: 0},
+                side: 'attacker',
+                score: [
+                    {
+                        team: kru!,
+                        score: 13,
+                    },
+                    {
+                        team: twoG!,
+                        score: 8,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '39',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
+                map: maps.find((map) => map.name === "Split")!,
                 team: {team: kru!, score: 0},
                 side: 'decider',
-                done: false,
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/430098/kr-esports-vs-2game-esports-tixinha-invitational-by-bonoxs-cf",
@@ -823,46 +831,64 @@ const matches: Match[] = [
         teams: [
             {
                 team: furia!,
-                score: 0,
+                score: 2,
             },
             {
                 team: mibr!,
-                score: 0,
+                score: 1,
             }
         ],
         maps: [
             {
                 id: '40',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
-                team: {team: furia!, score: 0},
+                map: maps.find((map) => map.name === "Bind")!,
+                team: {team: mibr!, score: 0},
                 side: 'defender',
-                done: false,
+                score: [
+                    {
+                        team: furia!,
+                        score: 13,
+                    },
+                    {
+                        team: mibr!,
+                        score: 9,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '41',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
-                team: {team: mibr!, score: 0},
+                map: maps.find((map) => map.name === "Abyss")!,
+                team: {team: furia!, score: 0},
                 side: 'defender',
-                done: false,
+                score: [
+                    {
+                        team: furia!,
+                        score: 15,
+                    },
+                    {
+                        team: mibr!,
+                        score: 17,
+                    }
+                ],
+                done: true,
             },
             {
                 id: '42',
-                map: {
-                    id: 'tbd',
-                    name: 'TBD',
-                    image: 'https://images.emojiterra.com/mozilla/1024px/2753.png',
-                },
-                team: {team: furia!, score: 0},
+                map: maps.find((map) => map.name === "Haven")!,
+                team: {team: mibr!, score: 0},
                 side: 'decider',
-                done: false,
+                score: [
+                    {
+                        team: furia!,
+                        score: 13,
+                    },
+                    {
+                        team: mibr!,
+                        score: 8,
+                    }
+                ],
+                done: true,
             }
         ],
         vlr: "https://www.vlr.gg/430099/furia-vs-mibr-tixinha-invitational-by-bonoxs-gf",
